@@ -7,7 +7,7 @@
 
 /* -------------------------------------------------------------------
  * F1. LED par MMIO — allumer une couleur
- * Responsable : ...
+ * Responsable : Jean Kersen Villefranche
  * R0 (entrée) : couleur (ROUGE = 0, VERT = 1, BLEU = 2)
  * Éteint les deux autres couleurs et allume celle qui est demandée.
  * ------------------------------------------------------------------- */
