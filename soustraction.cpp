@@ -2,7 +2,7 @@
 
 /* -------------------------------------------------------------------
  * B2. Soustraction
- * Responsable : ...
+ * Responsable : Fatoumata Diaraye Bah
  * R0, R1 (entrée) : opérandes ; R0 (sortie) : R0 − R1
  * ------------------------------------------------------------------- */
 extern "C" __attribute__((naked)) int soustraction(int a, int b) {
