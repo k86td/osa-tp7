@@ -2,7 +2,7 @@
 
 /* -------------------------------------------------------------------
  * F1. LED par MMIO — tout éteindre
- * Responsable : ...
+ * Responsable : Jean Kersen Vilefranche
  * ------------------------------------------------------------------- */
 extern "C" __attribute__((naked)) void led_eteindre(void) {
   asm volatile(
