@@ -18,7 +18,7 @@ extern "C" __attribute__((naked)) void led_allumer(int couleur) {
     "LDR   R2, =0x01010040  \n"
     "STR   R2, [R1]         \n"
 
-    // Déterminer la couleur demandée
+    //  couleur demandée
     "CMP   R0, #0           \n"
     "BEQ   led_rouge        \n"
 
@@ -28,20 +28,20 @@ extern "C" __attribute__((naked)) void led_allumer(int couleur) {
     "CMP   R0, #2           \n"
     "BNE   led_fin          \n"
 
-    // Bleu : P0.06
+    // Bleu
     "MOV   R2, #64          \n"
     "B     led_activer      \n"
 
-    // Rouge : P0.24
+    // Rouge
     "led_rouge:             \n"
     "LDR   R2, =0x01000000  \n"
     "B     led_activer      \n"
 
-    // Vert : P0.16
+    // Vert
     "led_vert:              \n"
     "LDR   R2, =0x00010000  \n"
 
-    // Activer la couleur choisie (LOW)
+    // Activer la couleur choisie
     "led_activer:           \n"
     "LDR   R1, =0x5000050C  \n"
     "STR   R2, [R1]         \n"
