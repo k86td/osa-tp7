@@ -6,7 +6,11 @@
  * ------------------------------------------------------------------- */
 extern "C" __attribute__((naked)) void led_eteindre(void) {
   asm volatile(
-    "BX    LR              \n"   // à compléter
-    ".ltorg                \n"
+    "LDR   R0, =0x50000508  \n"
+    "LDR   R1, =0x01010040  \n"
+    "STR   R1, [R0]         \n"
+
+    "BX    LR               \n"
+    ".ltorg                 \n"
   );
 }
