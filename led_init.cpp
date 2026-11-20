@@ -2,7 +2,7 @@
 
 /* -------------------------------------------------------------------
  * F1. LED par MMIO — initialisation
- * Responsable : ...
+ * Responsable : Jean Kersen Villefranche
  * Configure en sortie les trois broches de la LED RGB (registre DIRSET)
  * et éteint la LED.
  * ------------------------------------------------------------------- */
