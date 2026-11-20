@@ -7,7 +7,7 @@
  * ------------------------------------------------------------------- */
 extern "C" __attribute__((naked)) int soustraction(int a, int b) {
   asm volatile(
-    "SUB R0, RO, R1        \n"
+    "SUB R0, R0, R1        \n"
     "BX    LR              \n"  
     ".ltorg                \n"
   );
