@@ -131,8 +131,12 @@ static void phase_bleue(void) {
   }
 }
 
+extern "C" int read_temperature();
+
 /* Critère H : appeler ici vos fonctions originales, au besoin. */
 static void executer_fonction_originale(void) {
+  Serial.print("Température: ");
+  Serial.println(read_temperature());
 }
 
 void setup() {

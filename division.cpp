@@ -2,7 +2,7 @@
 
 /* -------------------------------------------------------------------
  * B4. Division (SDIV et UDIV interdites)
- * Responsable : ...
+ * Responsable : Tristan Lépine
  * R0, R1 (entrée) : dividende, diviseur (non nul)
  * R0 (sortie) : quotient tronqué vers zéro (-7 / 2 = -3)
  * ------------------------------------------------------------------- */
